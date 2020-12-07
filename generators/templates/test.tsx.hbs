@@ -6,6 +6,6 @@ describe('<{{pascalCase name}} />', () => {
   it('should render {{pascalCase name}}', () => {
     const { container } = render(<{{pascalCase name}} />)
 
-    expect(container).not.toBeNull()
+    expect(container.firstChild).toBeInTheDocument()
   })
 })

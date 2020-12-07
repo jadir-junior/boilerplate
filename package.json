@@ -10,7 +10,8 @@
     "typecheck": "tsc --project tsconfig.json --noEmit",
     "test": "jest",
     "test:watch": "yarn test --watch",
-    "generate": "yarn plop --plopfile ./generators/plopfile.js",
+    "generate:component": "yarn plop --plopfile ./generators/component.js",
+    "generate:template": "yarn plop --plopfile ./generators/template.js",
     "storybook": "start-storybook -s ./public -p 6006 --no-dll",
     "build-storybook": "build-storybook -s ./public --no-dll"
   },
